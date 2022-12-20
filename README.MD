@@ -3,9 +3,9 @@
 ### Version: 1.0.2
 # Commands:
 ### `>ask` - Ask a question, openai will answer it on chat
-### `>askdm` - Ask a question, openai will answer as private message
-### `>image` - will generate image based on your text
-### `>stats` - get your Leauge of Legends stats
+### `>askdm` - Ask a question, openai will answer on DM
+### `>image` - Generate image based on your input
+### `>stats` - Get your Leauge of Legends stats
 # Changelog
 ## 1.0.2
 - Added `>stats` command
