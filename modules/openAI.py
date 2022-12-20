@@ -12,3 +12,9 @@ def openai_answer(message):
     completion = openai.Completion().create(model=MODEL, prompt=message, temperature=TEMPERATURE, max_tokens=MAX_TOKENS)
     response = completion.choices[0].text
     return response
+
+def generate_image(message):
+    response = openai.Image.create(prompt=message, n=1, size="1024x1024")
+    return response['data'][0]['url']
+
+
