@@ -34,5 +34,8 @@ def botCommands(client):
     @client.command()
     async def stats(ctx, *, summonerName):
         summoner = Summoner(summonerName)
-        await ctx.send("```"+summoner.getSummonerStats()+"```")
+        try:
+            await ctx.send("```" + summoner.getSummonerStats() + "```")
+        except:
+            await ctx.send("There was an error with the API, check API-KEY")
 
